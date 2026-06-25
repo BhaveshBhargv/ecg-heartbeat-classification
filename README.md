@@ -26,7 +26,7 @@ Electrocardiogram (ECG) signals carry critical information about heart health. T
 
 The dataset was provided as part of university coursework and contains labelled ECG signal recordings across multiple heartbeat categories (e.g. normal, and various arrhythmia types).
 
-Each sample is a fixed-length time-series representing a single heartbeat, with a corresponding class label for supervised classification.
+Each sample is a fixed-length time series representing a single heartbeat, with a corresponding class label for supervised classification.
 
 ---
 
@@ -68,8 +68,9 @@ Each sample is a fixed-length time-series representing a single heartbeat, with 
 ecg-heartbeat-classification/
 │
 ├── ecg_classification.ipynb   # Main Colab notebook
-├── README.md                  # Project documentation
-└── requirements.txt           # Dependencies
+├── mitbih_test.csv            # Test Dataset
+├── mitbih_train.csv           # Train Dataset
+└── README.md                  # Project documentation
 ```
 
 ---
@@ -79,16 +80,13 @@ ecg-heartbeat-classification/
 ### Run in Google Colab
 Click the badge below to open the notebook directly in Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](YOUR_COLAB_LINK_HERE)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1vGM_BGqZKK1QQaKAiI9WiYEeu7yS5xVq#scrollTo=DgXc7E_iRo_x)
 
 ### Run Locally
 ```bash
 # Clone the repository
 git clone https://github.com/BhaveshBhargv/ecg-heartbeat-classification.git
 cd ecg-heartbeat-classification
-
-# Install dependencies
-pip install -r requirements.txt
 
 # Open the notebook
 jupyter notebook ecg_classification.ipynb
